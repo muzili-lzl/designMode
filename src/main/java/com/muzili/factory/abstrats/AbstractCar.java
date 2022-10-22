@@ -1,6 +1,6 @@
 package com.muzili.factory.abstrats;
 
-public abstract class Car{
+public abstract class AbstractCar {
 
     abstract void go();
 

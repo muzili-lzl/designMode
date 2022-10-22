@@ -1,6 +1,6 @@
 package com.muzili.factory.abstrats;
 
-public abstract class Food {
+public abstract class AbstractFood {
 
     abstract void brand();
 
