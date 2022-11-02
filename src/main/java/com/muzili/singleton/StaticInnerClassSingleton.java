@@ -10,13 +10,17 @@ package com.muzili.singleton;
  */
 public class StaticInnerClassSingleton {
 
-    private StaticInnerClassSingleton(){};
+    private StaticInnerClassSingleton(){
+        if (StaticInnerClass.INSTANCE != null){
+            throw new RuntimeException("防止通过反射获取该类构造方法");
+        }
+    };
 
     private static class StaticInnerClass{
         private static final StaticInnerClassSingleton INSTANCE = new StaticInnerClassSingleton();
     }
 
-    public StaticInnerClassSingleton getInstance(){
+    public static StaticInnerClassSingleton getInstance(){
         return StaticInnerClass.INSTANCE;
     }
 

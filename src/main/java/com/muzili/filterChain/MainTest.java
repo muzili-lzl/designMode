@@ -27,6 +27,5 @@ public class MainTest {
 
         filterChain.addFilter(chain1);
         filterChain.doFilter(request, response, filterChain);
-
     }
 }
