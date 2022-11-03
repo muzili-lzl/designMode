@@ -1,4 +1,4 @@
-package com.muzili.proxy.dynamic;
+package com.muzili.proxy.dynamic.jdk;
 
 /**
  * 动态代理源
