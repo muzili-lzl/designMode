@@ -9,6 +9,7 @@ import java.lang.reflect.Proxy;
 
 /**
  * 动态代理之JDK代理
+ *
  * @author lizuoliang
  * @create 2022/11/2 21:53
  */
